@@ -1,0 +1,79 @@
+/* pages/mine/index.wxss */
+
+/* 用户信息头部部分 */
+.user-container {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d2d2d2;
+  background: #F20108;
+}
+
+.user-container image {
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+  margin: 0 40rpx;
+}
+
+.user-container .user-info {
+  height: 60px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.user-container .user-info .name {
+  color: white;
+  font-weight: 500;
+}
+
+.user-container .user-info .level {
+  color: white;
+  font-size: 15px;
+}
+
+/* 订单列表部分 */
+.orders {
+  border-bottom: 20rpx solid #EEEEEE;
+  display: flex;
+  justify-content: space-around;
+  padding: 30rpx 0;
+}
+
+.orders .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orders .cell .icon {
+  width: 50rpx;
+  height: 50rpx;
+  padding-bottom: 10rpx;
+}
+
+.orders .cell .title {
+  font-size: 15px;
+}
+
+
+/* 个人设置列表部分 */
+.list .cell {
+  padding: 20rpx 0;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #d2d2d2;
+  display: flex;
+  align-items: center;
+}
+
+.list .cell .icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.list .cell .title {
+  font-size: 15px;
+}

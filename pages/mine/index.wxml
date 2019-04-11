@@ -1,0 +1,30 @@
+<!--pages/mine/index.wxml-->
+
+<!-- 个人信息 -->
+<view class='user-container'>
+  <image src='{{user.avatar}}'></image>
+  <view class='user-info'>
+    <view class='name'>{{user.nickname}}</view>
+    <view class='level'>功勋墙 ></view>
+  </view>
+</view>
+
+<!-- 订单列表 -->
+<view class='orders'>
+  <block wx:for='{{orders}}' wx:key='*this'>
+    <view class='cell' catchtap='orderTap' data-index='{{index}}'>
+      <image class='icon' src='{{item.icon}}'></image>
+      <text class='title'>{{item.title}}</text>
+    </view>
+  </block> 
+</view>
+
+<!-- 个人设置相关 -->
+<view class='list'>
+  <block wx:for='{{list}}' wx:key='*this'>
+    <view class='cell' catchtap='itemTap' data-index='{{index}}'>
+      <image class='icon' src='{{item.icon}}'></image>
+      <text class='title'>{{item.title}}</text>
+    </view>
+  </block> 
+</view>
